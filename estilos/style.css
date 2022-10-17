@@ -1,0 +1,77 @@
+@keyframes example {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+    }
+
+img {
+    width: 350px;
+    position:absolute;
+	left: 40%;
+    top:20%;
+}
+#pokebola {
+    width: 6%;
+}
+    
+
+
+.circle-menu li {
+    list-style: none;
+    display: inline;
+    
+}
+
+.circle-menu {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    border-radius: 50%;
+    margin: 11em auto 7em;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+        animation-name: example;
+        animation-duration: 4s;
+        animation: example 13s infinite linear;
+}
+.circle-menu a {
+  display: block;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  width: 8em; height: 8em;
+  line-height:80em;
+  margin: -3.5em;
+  -moz-border-radius: 4em;
+  -webkit-border-radius: 4em;
+  border-radius: 4em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
+}
+
+.circle-menu a.spiritual {background-image:url("/estilos/image/Pokebola.png");}
+.circle-menu a.occupational {background-image:url("/estilos/image/Pokebola.png");}
+.circle-menu a.emotional  {background-image:url("/estilos/image/Pokebola.png");}
+.circle-menu a.environmental  {background-image:url("/estilos/image/Pokebola.png");}
+.circle-menu a.intellectual {background-image:url("/estilos/image/Pokebola.png");}
+.circle-menu a.social  {background-image:url("/estilos/image/Pokebola.png");}
+.circle-menu a.physical  {background-image:url("/estilos/image/Pokebola.png");}
+
+.circle-menu a.spiritual:hover {background-image:url("");}
+.circle-menu a.occupational:hover {background-image:url("");}
+.circle-menu a.emotional:hover {background:#fecd06;opacity: 1.0;}
+.circle-menu a.environmental:hover {background:#fa7f00;opacity: 1.0;}
+.circle-menu a.intellectual:hover {background:#ed2124;opacity: 1.0;}
+.circle-menu a.social:hover {background:#932683;opacity: 1.0;}
+.circle-menu a.physical:hover {background:#203864;opacity: 1.0;}
+
+
+ /* 360/7= 51 roughly so for 7 elements rotate the element every 51deg. 12em translate is half the container */
+.circle-menu .spiritual { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(15em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
+.circle-menu .occupational { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(15em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
+.circle-menu .emotional { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(15em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
+.circle-menu .environmental { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(15em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
+.circle-menu .intellectual { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(15em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255deg);}
+.circle-menu .social { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(15em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
+.circle-menu .physical { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(15em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
